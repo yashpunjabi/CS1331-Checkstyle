@@ -60,14 +60,15 @@ Run the command:
 java -jar checkstyle-6.2.2.jar src/main/java/*.java
 ```
 
-This command will check all of your java files (*.java means any .java file) in the src/main/java directory and output the result.
+The `java -jar` part means that I'm executing a .jar file. Then I give it the filename. Then I tell it what files I want it to check. `src/main/java/*.java` means all the java files in `src/main/java/`
 
 Here is what it looks like if you have some checkstyle errors (Don't worry about what these errors mean right now)
 
 ![with-errors](./errors.png)
 
-After fixing all the errors in my code, I run checkstyle again to make sure there are no more errors
+After going through my code and fixing all the errors, I run checkstyle again to make sure there are no more errors
 
 ![without-errors](./no-errors.png)
 
 **We take one point off your homework for each checkstyle error, so make sure you run checkstyle before submitting!**
+
