@@ -98,15 +98,15 @@ Screenshots of the process:
 
 * Open terminal. Show that checkstyle alias is not set yet
 
-  ![open-terminal](.alias-linux-1.png)
+  ![open-terminal](./alias-linux-1.png)
 
 * Open ~/.bashrc. Yours will look different. I already have a bunch of aliases. Add the checkstyle alias into the file
 
-  ![add-alias](.alias-linux-2.png)
+  ![add-alias](./alias-linux-2.png)
   
 * Save and close the file. Restart terminal. Now checkstyle alias is set. *Note: you still have to tell checkstyle what file to check or it will complain like it did in the screeshot*
 
-  ![alias-added](.alias-linux-3.png)
+  ![alias-added](./alias-linux-3.png)
 
 (If it didn't work, try adding the same line in `~/.bash_profile` instead of `~/.bashrc`)
 
