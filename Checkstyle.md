@@ -35,9 +35,11 @@ Checkstyle needs to be run on java source code. So, if you haven't created or wr
 
 *Hint:* you will need to create some directories in your hw folder to put the java files in if they are not already present
 
-From the hw root, you will have to create a directory named `src`, navigate into it and then create a directory named `main`, navigate into `main` and then create another directory named `java`. You will place your java files in this `java` folder.
+Navigate to your hw root directory. The hw root directory is the top directory of your homework - it is where you placed the checkstyle jar file (`cs1331/hw-homeworkname-master` is the root directory in this case).
 
-You can do this from the command-line for all operating systems by executing the following commands:
+From the hw root directory, you will have to create a directory named `src`, navigate into it and then create a directory named `main`, navigate into `main` and then create another directory named `java`. You will place your java files in this `java` folder.
+
+You can do this from the command-line (for all operating systems) by executing the following commands:
 
 ```Batchfile
 cd /home/username/cs1331/ #or wherever your cs1331 folder is placed
@@ -52,4 +54,16 @@ cd java
 
 So now, you have `cs1331/hw-homeworkname-master/src/main/java/` with java files inside it.
 
-Navigate to your hw root directory. The hw root directory is the top directory of your homework - it is where you placed the checkstyle jar file (`cs1331/hw-homeworkname-master` is the root directory in this case).
+To run checkstyle, go to your hw root directory (again, this is the directory that contains the checkstyle file)
+
+Run the command:
+
+```Batchfile
+java -jar checkstyle-6.2.2.jar src/main/java/*.java
+```
+
+This command will check all of your java files (*.java means any .java file) in the src/main/java directory and output the result.
+
+TODO add screenshots here
+
+**We take one point off your homework for each checkstyle error, so make sure you run checkstyle before submitting!**
