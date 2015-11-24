@@ -27,7 +27,7 @@ When your next homework is assigned, you should do the following:
 3. You should now have a folder names something like `cs1331/hw-homeworkname-master`
 4. Copy the checkstyle jar file from `bin` to the hw folder
 
-##### How do I use checkstyle on my homework?
+### Run Checkstyle
 
 Checkstyle needs to be run on java source code. So, if you haven't created or written your .java files yet, you have to do so first.
 
@@ -72,3 +72,39 @@ After going through my code and fixing all the errors, I run checkstyle again to
 
 **We take one point off your homework for each checkstyle error, so make sure you run checkstyle before submitting!**
 
+## Aliases
+
+That is a very long command and a long process. You're probably going to have to open this guide and copy/paste it every time you want to use it. That's a little less than ideal isn't it? And who wants to remember to copy the checkstyle file into each homework directory? You're a computer science student - you're always looking for ways to do less work!
+
+Well, we can shorten this whole process down. In fact, you can run checkstyle on any of your code in any directory by simply typing in the following command:
+
+`checkstyle *.java`
+
+Isn't that so much easier?
+
+Here's how to do it.
+
+### Linux
+
+1. Open the terminal
+2. Type in `nano ~/.bashrc`
+3. Go to the end of this file and add this line to it
+
+ `alias checkstyle='java -jar /home/username/cs1331/bin/checkstyle-6.2.2.jar'`
+
+4. Save and close the file (Ctrl-X closes the file in nano. Then hit Y when it asks whether you want to save it, and then hit enter to confirm). Restart the terminal, and you're done!
+
+Screenshots of the process:
+
+
+
+(If it didn't work, try adding the same line in `~/.bash_profile` instead of `~/.bashrc`)
+
+### Mac
+
+1. Open your terminal.
+2. Type `cd` and hit enter. This navigates to your home directory.
+3. Type in `nano .bash_profile`
+4. Now follow steps 3. onwards in the Linux section
+
+### Windows
