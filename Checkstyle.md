@@ -98,7 +98,7 @@ Here's how to do it.
 
 Screenshots of the process:
 
-* Open terminal. Show that checkstyle alias is not set yet
+* Open terminal. You can see that my checkstyle alias is not set yet.
 
   ![open-terminal](./alias-linux-1.png)
 
