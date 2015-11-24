@@ -2,9 +2,7 @@
 ---
 ##### A Guide to setup checkstyle for the CS1331 course at Georgia Tech. It will go over how to download and use checkstyle along with how to make aliases on Linux, Windows, or Mac.
 
-**At this point you should have Java installed and working on your computer. If not, go through the Java installation guide found [here](Add a link)**
-
-TODO add link to java install guide^
+**At this point you should have Java installed and working on your computer. If not, go through the Java installation guide found [here](http://cs1331.org/resources.html)**
 
 Checkstyle is a style guide used in CS1331 to make sure that you are writing code that is readable and follows standard coding conventions. It scans through your code and lets you know of any style errors that you've made so that you can fix them. All homework that you submit should be run through checkstyle first because we take points off for checkstyle errors.
 
@@ -64,6 +62,12 @@ java -jar checkstyle-6.2.2.jar src/main/java/*.java
 
 This command will check all of your java files (*.java means any .java file) in the src/main/java directory and output the result.
 
-TODO add screenshots here
+Here is what it looks like if you have some checkstyle errors (Don't worry about what these errors mean right now)
+
+![with-errors](./errors.png)
+
+After fixing all the errors in my code, I run checkstyle again to make sure there are no more errors
+
+![without-errors](./no-errors.png)
 
 **We take one point off your homework for each checkstyle error, so make sure you run checkstyle before submitting!**
