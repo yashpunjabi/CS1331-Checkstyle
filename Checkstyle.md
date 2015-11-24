@@ -39,7 +39,7 @@ From the hw root, you will have to create a directory named `src`, navigate into
 
 You can do this from the command-line for all operating systems by executing the following commands:
 
-```bash
+```Batchfile
 cd /home/username/cs1331/ #or wherever your cs1331 folder is placed
 cd hw-homeworkname-master
 mkdir src
