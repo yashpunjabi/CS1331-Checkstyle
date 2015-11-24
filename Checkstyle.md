@@ -91,6 +91,8 @@ Here's how to do it.
 3. Go to the end of this file and add this line to it
 
  `alias checkstyle='java -jar /home/username/cs1331/bin/checkstyle-6.2.2.jar'`
+ 
+ remember to replace the directory here with wherever your cs1331 directory is.
 
 4. Save and close the file (Ctrl-X closes the file in nano. Then hit Y when it asks whether you want to save it, and then hit enter to confirm). Restart the terminal, and you're done!
 
@@ -100,7 +102,7 @@ Screenshots of the process:
 
   ![open-terminal](./alias-linux-1.png)
 
-* Open ~/.bashrc. Yours will look different. I already have a bunch of aliases. Add the checkstyle alias into the file
+* Open ~/.bashrc. Yours will probably look different. Add the checkstyle alias into the file.
 
   ![add-alias](./alias-linux-2.png)
   
