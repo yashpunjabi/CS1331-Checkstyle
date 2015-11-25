@@ -6,7 +6,7 @@
 
 Checkstyle is a style guide used in CS1331 to make sure that you are writing code that is readable and follows standard coding conventions. It scans through your code and lets you know of any style errors that you've made so that you can fix them. All homework that you submit should be run through checkstyle first because we take points off for checkstyle errors.
 
-It is run through the terminal(*nix systems like Mac and Linux) or through the command prompt/powershell (Windows).
+It is run through the terminal(\*nix systems like Mac and Linux) or through the command prompt/powershell (Windows).
 
 You will see the word 'directory' be used in this document frequently. A directory is just the technical term for a folder on your computer. If asked to make a directory, you just need to create a new folder.
 
@@ -84,17 +84,18 @@ Isn't that so much easier?
 
 Here's how to do it.
 
-### Linux
+### Linux / Mac (\*nix systems)
 
 1. Open the terminal
-2. Type in `nano ~/.bashrc`
-3. Go to the end of this file and add this line to it
+2. Type `cd` and hit enter. This navigates to your home directory.
+3. Type in `nano .bashrc` for Linux or `nano .bash_profile` for Mac
+4. Go to the end of this file and add this line to it
 
  `alias checkstyle='java -jar /home/username/cs1331/bin/checkstyle-6.2.2.jar'`
 
  remember to replace the directory here with wherever your cs1331 directory is.
 
-4. Save and close the file (Ctrl-X closes the file in nano. Then hit Y when it asks whether you want to save it, and then hit enter to confirm). Restart the terminal, and you're done!
+5. Save and close the file (Ctrl-X closes the file in nano. Then hit Y when it asks whether you want to save it, and then hit enter to confirm). Restart the terminal, and you're done!
 
 Screenshots of the process:
 
@@ -110,13 +111,7 @@ Screenshots of the process:
 
   ![alias-added](./alias-linux-3.png)
 
-(If it didn't work, try adding the same line in `~/.bash_profile` instead of `~/.bashrc`)
+(If it didn't work, try adding the same line in `~/.bash_profile` instead of `~/.bashrc` or vice-versa)
 
-### Mac
-
-1. Open your terminal.
-2. Type `cd` and hit enter. This navigates to your home directory.
-3. Type in `nano .bash_profile`
-4. Now follow steps 3. onwards in the Linux section
 
 ### Windows
