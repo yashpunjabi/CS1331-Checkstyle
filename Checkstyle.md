@@ -97,7 +97,6 @@ Here's how to do it.
 Screenshots of the process:
 
 
-
 (If it didn't work, try adding the same line in `~/.bash_profile` instead of `~/.bashrc`)
 
 ### Mac
