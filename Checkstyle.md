@@ -20,47 +20,18 @@ We suggest that you create a folder called `cs1331` somewhere easily accessible 
 
 Create a folder named `bin` in your `cs1331` folder and save the checkstyle jar file there.
 
-When your next homework is assigned, you should do the following:
-
-1. Download the zip file of the homework
-2. Place the zip file in the `cs1331` folder and unzip it
-3. You should now have a folder names something like `cs1331/hw-homeworkname-master`
-4. Copy the checkstyle jar file from `bin` to the hw folder
+When your next homework is assigned, you should copy the checkstyle file from the bin folder and paste it into your homework folder along with the .java files.
 
 ### Run Checkstyle
 
 Checkstyle needs to be run on java source code. So, if you haven't created or written your .java files yet, you have to do so first.
 
-*Hint:* you will need to create some directories in your hw folder to put the java files in if they are not already present
+Place the checkstyle file in the same directory as the code (.java files) and from the command-line, execute the following command:
 
-Navigate to your hw root directory. The hw root directory is the top directory of your homework - it is where you placed the checkstyle jar file (`cs1331/hw-homeworkname-master` is the root directory in this case).
+`java -jar checkstyle-6.2.2.jar *.java`
 
-From the hw root directory, you will have to create a directory named `src`, navigate into it and then create a directory named `main`, navigate into `main` and then create another directory named `java`. You will place your java files in this `java` folder.
-
-You can do this from the command-line (for all operating systems) by executing the following commands:
-
-```Batchfile
-cd /home/username/cs1331/ #or wherever your cs1331 folder is placed
-cd hw-homeworkname-master
-mkdir src
-cd src
-mkdir main
-cd main
-mkdir java
-cd java
-```
-
-So now, you have `cs1331/hw-homeworkname-master/src/main/java/` with java files inside it.
-
-To run checkstyle, go to your hw root directory (again, this is the directory that contains the checkstyle file)
-
-Run the command:
-
-```Batchfile
-java -jar checkstyle-6.2.2.jar src/main/java/*.java
-```
-
-The `java -jar` part means that I'm executing a .jar file. Then I give it the filename. Then I tell it what files I want it to check. `src/main/java/*.java` means all the java files in `src/main/java/`
+The `java -jar` part means that I'm executing a .jar file. Then I give it the checkstyle file. Then I tell it what files I want it to check. `*.java` means all the java files in the current directory.
+Make sure that you have already navigated to the directory where your code is before you run checkstyle.
 
 Here is what it looks like if you have some checkstyle errors (Don't worry about what these errors mean right now)
 
@@ -111,7 +82,7 @@ Screenshots of the process:
 
   ![alias-added](./alias-linux-3.png)
 
-(If it didn't work, try adding the same line in `~/.bash_profile` instead of `~/.bashrc` or vice-versa)
+(If it didn't work, try adding the same line in `~/.bash_profile` instead of `~/.bashrc` or vice-versa  )
 
 
 ### Windows
