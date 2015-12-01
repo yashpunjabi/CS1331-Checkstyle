@@ -66,6 +66,8 @@ Here's how to do it.
 
 5. Save and close the file (Ctrl-X closes the file in nano. Then hit Y when it asks whether you want to save it, and then hit enter to confirm). Restart the terminal, and you're done!
 
+(If it didn't work, try adding the same line in `~/.bash_profile` instead of `~/.bashrc` or vice-versa)
+
 Screenshots of the process:
 
 * Open terminal. You can see that my checkstyle alias is not set yet.  
@@ -77,7 +79,6 @@ Screenshots of the process:
 * Save and close the file. Restart terminal. Now checkstyle alias is set. *Note: you still have to tell checkstyle what file to check or it will complain like it did in the screeshot*  
   ![alias-added](./alias-linux-3.png)
 
-(If it didn't work, try adding the same line in `~/.bash_profile` instead of `~/.bashrc` or vice-versa  )
 
 
 ### Windows
@@ -95,6 +96,8 @@ Aliasing in Windows can be done easily if you use git bash as your terminal. Her
 7. Restart git bash and you're done!
 
 If it didn't let you create the file in step 3, then try the command `touch .bashrc.` - Windows will remove the dot at the end by itself.
+
+If it didn't work, try again with `.bash_profile` instead of `.bashrc`
 
 Screenshots of the process:
 
