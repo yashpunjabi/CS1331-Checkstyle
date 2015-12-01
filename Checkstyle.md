@@ -33,12 +33,10 @@ Place the checkstyle file in the same directory as the code (.java files) and fr
 The `java -jar` part means that I'm executing a .jar file. Then I give it the checkstyle file. Then I tell it what files I want it to check. `*.java` means all the java files in the current directory.
 Make sure that you have already navigated to the directory where your code is before you run checkstyle.
 
-Here is what it looks like if you have some checkstyle errors (Don't worry about what these errors mean right now)
-
+Here is what it looks like if you have some checkstyle errors (Don't worry about what these errors mean right now)  
 ![with-errors](./errors.png)
 
-After going through my code and fixing all the errors, I run checkstyle again to make sure there are no more errors
-
+After going through my code and fixing all the errors, I run checkstyle again to make sure there are no more errors  
 ![without-errors](./no-errors.png)
 
 **We take one point off your homework for each checkstyle error, so make sure you run checkstyle before submitting!**
@@ -70,16 +68,13 @@ Here's how to do it.
 
 Screenshots of the process:
 
-* Open terminal. You can see that my checkstyle alias is not set yet.
-
+* Open terminal. You can see that my checkstyle alias is not set yet.  
   ![open-terminal](./alias-linux-1.png)
 
-* Open ~/.bashrc. Yours will probably look different. Add the checkstyle alias into the file.
-
+* Open ~/.bashrc. Yours will probably look different. Add the checkstyle alias into the file.  
   ![add-alias](./alias-linux-2.png)
 
-* Save and close the file. Restart terminal. Now checkstyle alias is set. *Note: you still have to tell checkstyle what file to check or it will complain like it did in the screeshot*
-
+* Save and close the file. Restart terminal. Now checkstyle alias is set. *Note: you still have to tell checkstyle what file to check or it will complain like it did in the screeshot*  
   ![alias-added](./alias-linux-3.png)
 
 (If it didn't work, try adding the same line in `~/.bash_profile` instead of `~/.bashrc` or vice-versa  )
@@ -102,3 +97,14 @@ Aliasing in Windows can be done easily if you use git bash as your terminal. Her
 If it didn't let you create the file in step 3, then try the command `touch .bashrc.` - Windows will remove the dot at the end by itself.
 
 Screenshots of the process:
+
+* Open git bash, navigate to home and create the file (in my case, I had to use `.bash_profile`)  
+![windows-alias-1](./windows-alias-1.png)
+
+* Open the file in vim and add the alias  
+![windows-alias-2](./windows-alias-2.png)
+
+* Save and close the file. Restart git bash and test whether it worked  
+![windows-alias-3](./windows-alias-3.png)
+
+#### Now you know how to run checkstyle and how to make an alias so that it is easy to use!
