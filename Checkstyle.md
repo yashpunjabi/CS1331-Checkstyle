@@ -86,3 +86,19 @@ Screenshots of the process:
 
 
 ### Windows
+
+There are many ways to access a terminal in windows. The ways to make aliases with the default command-prompt and with powershell are very complicated and will not be shown here. (You could Google them and figure out how to do them if you want).
+
+Aliasing in Windows can be done easily if you use git bash as your terminal. Here's how:
+
+1. Open git bash
+2. Type the command `cd` and hit enter. This navigates to your home directory.
+3. Type in `touch .bashrc` (touch will create the file)
+4. Type in `nano .bashrc` (this will let you edit the file)
+5. Type in `alias checkstyle='java -jar /c/cs1331/bin/checkstyle-6.2.2.jar'`
+6. Type Ctrl-X to save and type 'Y' to confirm and then enter to exit.
+7. Restart git bash and you're done!
+
+If it didn't let you create the file in step 3, then try the command `touch .bashrc.` - Windows will remove the dot at the end by itself.
+
+Screenshots of the process:
