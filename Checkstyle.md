@@ -1,4 +1,4 @@
-# CS1331-Checkstyle
+CS1331-Checkstyle
 ---
 ##### A Guide to setup checkstyle for the CS1331 course at Georgia Tech. It will go over how to download and use checkstyle along with how to make aliases on Linux, Windows, or Mac.
 
@@ -12,25 +12,26 @@ You will see the word 'directory' be used in this document frequently. A directo
 
 ### Download Checkstyle
 
-  * [Checkstyle-6.2.2.jar](http://cs1331.org/resources/checkstyle-6.2.2.jar)
+  * [Checkstyle-6.2.2.jar](http://www.cc.gatech.edu/~john.stasko/1331/checkstyle-6.2.2.jar)
+  * [Checkstyle xml file](http://www.cc.gatech.edu/~john.stasko/1331/cs1331-checkstyle.xml)
 
-##### Where should you place this file?
+##### Where should you place these files?
 
-We suggest that you create a folder called `cs1331` somewhere easily accessible (for e.g. C:\cs1331 on windows or /home/username/cs1331 on *nix).
+We suggest that you create a folder called `cs1331` somewhere easily accessible (for e.g. C:/cs1331 on windows or /home/username/cs1331 on *nix).
 
-Create a folder named `bin` in your `cs1331` folder and save the checkstyle jar file there.
+Create a folder named `bin` in your `cs1331` folder and save the checkstyle files there.
 
-When your next homework is assigned, you should copy the checkstyle file from the bin folder and paste it into your homework folder along with the .java files.
+When your next homework is assigned, you should copy the checkstyle files from the bin folder and paste it into your homework folder along with the .java files. (unless you set up an alias - more on that later)
 
 ### Run Checkstyle
 
 Checkstyle needs to be run on java source code. So, if you haven't created or written your .java files yet, you have to do so first.
 
-Place the checkstyle file in the same directory as the code (.java files) and from the command-line, execute the following command:
+Place the checkstyle files in the same directory as the code (.java files) and from the command-line, execute the following command:
 
-`java -jar checkstyle-6.2.2.jar *.java`
+`java -jar checkstyle-6.2.2.jar -c cs1331-checkstyle.xml`
 
-The `java -jar` part means that I'm executing a .jar file. Then I give it the checkstyle file. Then I tell it what files I want it to check. `*.java` means all the java files in the current directory.
+The `java -jar` part means that I'm executing a .jar file. Then I give it the checkstyle file. Then I give it the 1331 specific instructions through the .xml file. Then I tell it what files I want it to check. `*.java` means all the java files in the current directory.
 Make sure that you have already navigated to the directory where your code is before you run checkstyle.
 
 Here is what it looks like if you have some checkstyle errors (Don't worry about what these errors mean right now)  
@@ -60,7 +61,7 @@ Here's how to do it.
 3. Type in `nano .bashrc` for Linux or `nano .bash_profile` for Mac
 4. Go to the end of this file and add this line to it
 
- `alias checkstyle='java -jar /home/username/cs1331/bin/checkstyle-6.2.2.jar'`
+ alias checkstyle='java -jar /home/yash/cs1331/bin/checkstyle-6.2.2.jar -c /home/yash/cs1331/bin/cs1331-checkstyle.xml'
 
  remember to replace the directory here with wherever your cs1331 directory is.
 
@@ -90,10 +91,13 @@ Aliasing in Windows can be done easily if you use git bash as your terminal. Her
 1. Open git bash
 2. Type the command `cd` and hit enter. This navigates to your home directory.
 3. Type in `touch .bashrc` (touch will create the file)
-4. Type in `nano .bashrc` (this will let you edit the file)
-5. Type in `alias checkstyle='java -jar /c/cs1331/bin/checkstyle-6.2.2.jar'`
-6. Type Ctrl-X to save and type 'Y' to confirm and then enter to exit.
-7. Restart git bash and you're done!
+4. Type in `vim .bashrc` (this will let you edit the file)
+5. In vim, typing 'a' will let you begin editing the file
+6. Type in: alias checkstyle='java -jar /c/cs1331/bin/checkstyle-6.2.2.jar -c /c/cs1331/bin/cs1331-checkstyle.xml'
+7. Type `Esc` to stop editing then type `:wq` and hit Enter to save and quit.
+8. Restart git bash and you're done!
+
+Remember to replace the path in step 6 with the path to where your cs1331 folder is.
 
 If it didn't let you create the file in step 3, then try the command `touch .bashrc.` - Windows will remove the dot at the end by itself.
 
@@ -104,8 +108,9 @@ Screenshots of the process:
 * Open git bash, navigate to home and create the file (in my case, I had to use `.bash_profile`)  
 ![windows-alias-1](./windows-alias-1.png)
 
-* Open the file in vim and add the alias  
+* Open the file in vim and add the alias.
 ![windows-alias-2](./windows-alias-2.png)
+(screenshot doesn't show the xml part of the command, but it must be included)
 
 * Save and close the file. Restart git bash and test whether it worked  
 ![windows-alias-3](./windows-alias-3.png)
